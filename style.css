@@ -1,0 +1,108 @@
+/*.main{
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+}
+
+.main section{
+    width: 100%;
+    height: 300px;
+}
+
+.section-uno{
+    background-color: chocolate;
+}
+
+.section-dos{
+    background-color: black;
+    color: beige;
+}
+
+.section-tres{
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+}
+
+
+@media(max-width: 700px){
+    body{
+       background-color: blueviolet; 
+    }
+}
+
+@media(max-width: 600px){
+    body{
+        background-color: brown;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .main section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-tres{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 400px){
+    body{
+        background-color: royalblue;
+    }
+    .section-tres{
+        display: none;
+    }
+}*/
+
+/* Ejercicio de gatitos */
+
+.back{
+    background-image: url('./assets/images/sunny-day.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.gato{
+    background-image: url('./assets/images/kitten-large.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 800px;
+    height: 400px;
+}
+
+@media(max-width: 900px){
+    .back{
+        background-image: url('./assets/images/dawn.png');
+        background-size: cover;
+        width: 130%;
+        height: 128vh;
+    }
+    .gato{
+        background-image: url('./assets/images/kitten-medium.png');
+    }
+    
+}
+
+@media(max-width: 600px){
+    .back{
+        background-image: url('./assets/images/night.jpg');
+        width: 200%;
+        height: 193vh;
+    }
+    .gato{
+        background-image: url('./assets/images/kitten-small.png');
+    }
+}
+
